@@ -1,6 +1,6 @@
 a=int(input())
-k=a
 sum=0
+k=a*1
 while a:
     r=a%10
     sum=sum+r
