@@ -1,8 +1,9 @@
 a=int(input())
-for i in range(1,10):
-    k=i*i
-    if(a==k):
-        print(True)
-        break
+c=0
+for i in range(1,a):
+    if(i*i==a):
+       c=c+1
+if(c==1):
+    print('True')
 else:
-    print(False)
+    print('False')
