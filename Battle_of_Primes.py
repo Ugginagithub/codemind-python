@@ -6,10 +6,10 @@ def p(n):
             return 0
     else:
         return 1
-m=int(input())
-n=int(input())
-o=m+n
-for i in range(1,10000000):
-    if(p(o+i)):
+a=int(input())
+b=int(input())
+k=a+b
+for i in range(1,100000):
+    if(p(k+i)):
         print(i)
         break
