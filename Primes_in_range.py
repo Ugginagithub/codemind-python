@@ -6,10 +6,10 @@ def p(n):
             return 0
     else:
         return 1
-m=int(input())
-n=int(input())
+a=int(input())
+b=int(input())
 c=0
-for i in range(m,n+1):
+for i in range(a,b+1):
     if p(i):
         c+=1
 print(c)
