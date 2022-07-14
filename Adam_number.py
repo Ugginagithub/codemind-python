@@ -1,18 +1,19 @@
-def sqr(n):
-    c=n*n
-    return c
-def rev(a):
-    s=0
-    while a:
-        r=a%10
-        s=s*10+r
-        a//=10
-    return s
+def sq(n):
+    m=n*n
+    return m
+def rev(n):
+    t=n
+    rev=0
+    while(n):
+        rev=rev*10+n%10
+        n=n//10
+    return rev
 n=int(input())
-n1=rev(n)
-n2=rev(sqr(n1))
-n3=sqr(n)
-if(n2==n3):
+m=sq(n)
+o=rev(n)
+p=sq(o)
+q=rev(p)
+if(m==q):
     print('True')
 else:
     print('False')
