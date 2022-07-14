@@ -1,5 +1,5 @@
 n=input()
-if(len(set(n))==len(str(n))):
-    print("Unique Number")
+if len(set(n))!=len(n):
+    print('Not Unique Number')
 else:
-    print("Not Unique Number")
+    print('Unique Number')
