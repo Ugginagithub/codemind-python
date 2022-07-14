@@ -1,15 +1,15 @@
-number = int(input())
-sum = 0
-while True:
-    while number!=0:
-        sum+=(number%10)**2
-        number//=10
-    if sum==1 or sum==7:
-        print(True)
+n=int(input())
+s=0
+while(True):
+    while(n!=0):
+        s+=(n%10)**2
+        n=n//10
+    if(s==1 or s==7):
+        print('True')
         break
-    elif sum<10:
-        print(False)
+    elif(s<10):
+        print('False')
         break
     else:
-        number=sum
-        sum=0
+        n=s
+        s=0
