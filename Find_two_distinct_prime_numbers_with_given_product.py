@@ -8,10 +8,10 @@ def pri(n):
         return 1
 n=int(input())
 c=0
-for i in range(2,n):
+for i in range(1,n):
     if(n%i==0):
         if(pri(i)):
             c+=1
             print(i,end=' ')
 if(c==0):
-    print("-1")
+    print('-1')
