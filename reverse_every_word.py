@@ -1,6 +1,4 @@
-n=input()
-s=n.split()[::-1]
-l=[]
-for  i in s:
-    l.append(i)
-print(" ".join(l)[::-1])
+s=input()
+s=s.split(' ')
+for i in s:
+    print(i[::-1],end=' ')
