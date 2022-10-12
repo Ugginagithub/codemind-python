@@ -1,8 +1,10 @@
-n = input()
-for i in range(0,len(n)):
-    c = n.count(n[i])
-    if c==1:
-        print(n[i])
-        break
-else:
-    print("-1")
+x=input()
+c=0
+for i in x:
+    if i>='a' and i<='z':
+        if x.count(i)==1:
+            print(i,end="")
+            c+=1
+            break
+if c==0:
+    print('-1')
