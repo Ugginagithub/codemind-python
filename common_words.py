@@ -1,7 +1,8 @@
-a=input()
-b=input()
-a,b=a.lower(),b.lower()
-a,b=a.split(" "),b.split(" ")
-for i in range(0,len(b)):
-    if b[i] in a:
-        print(b[i],end=" ")
+s1=input().lower()
+s2=input().lower()
+s1=s1.split(' ')
+s2=s2.split(' ')
+for i in s2:
+    for j in s1:
+        if i==j:
+            print(i,end=' ')
