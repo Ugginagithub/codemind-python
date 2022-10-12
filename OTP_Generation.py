@@ -1,0 +1,9 @@
+n=input()
+a=n[::-1]
+a=int(a)
+while(a):
+    r=a%10
+    if(r%2!=0):
+        sq=r*r
+        print(sq,end='')
+    a//=10
