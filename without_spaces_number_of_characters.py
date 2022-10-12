@@ -1,6 +1,4 @@
-a=input()
-c=0
-for i in a:
-    if i==" ":
-        c+=1
-print(len(a)-c)
+n=input()
+s=n.split(' ')
+le=len(s)-1
+print(len(n)-le)
