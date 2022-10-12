@@ -1,15 +1,13 @@
+def happy_num(n):
+    p=set()
+    while n!=1 and n!=7:
+        n=sum(int(i)**2 for i in str(n))
+        if n in p:
+            return 0
+        p.add(n)
+    return 1
 n=int(input())
-s=0
-while(True):
-    while(n!=0):
-        s+=(n%10)**2
-        n=n//10
-    if(s==1 or s==7):
-        print('True')
-        break
-    elif(s<10):
-        print('False')
-        break
-    else:
-        n=s
-        s=0
+if happy_num(n):
+    print("True")
+else:
+    print("False")
