@@ -1,5 +1,5 @@
-x=input()
-for i in sorted(set(x)):
-    if i>='a' and i<='z':
-        if x.count(i)==1:
-            print(i,end="")
+a=input()
+c=0
+for i in range(0,26):
+    if chr(97+i) in a:
+        print(chr(97+i),end='')
