@@ -1,7 +1,5 @@
 n=int(input())
-arr=list(map(int,input().split()))
-b=[]
-for i in arr:
-    if i not in b:
-        b.append(i)
-print(*b)
+a=list(map(int,input().split()))
+for i in sorted(set(a),key=a.index):
+    print(i,end=' ')
+   
