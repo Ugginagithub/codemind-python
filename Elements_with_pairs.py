@@ -1,7 +1,9 @@
 n=int(input())
-arr=list(map(int,input().split()))
-if(n%2==0):
-    print(*arr)
-elif(n%2!=0):
-    arr.append(0)
-    print(*arr)
+a=list(map(int,input().split()))
+if n%2==0:
+    for i in range(n):
+        print(a[i],end=' ')
+elif n%2!=0:
+    for i in range(n):
+        print(a[i],end=' ')
+    print('0')
