@@ -1,13 +1,10 @@
 n=int(input())
-arr=list(map(int,input().split()))
-a=int(input())
+a=list(map(int,input().split()))
+x=int(input())
 c=0
-b=[]
-for i in set(arr):
-    if(arr.count(i)==a):
-        c=1
-        b.append(i)
-if(c!=0):
-    print(*set(b))
-else:
+for i in sorted(set(a),key=a.index):
+    if a.count(i)==x:
+        print(i,end=' ')
+        c+=1
+if c==0:
     print('-1')
