@@ -1,9 +1,8 @@
 n=int(input())
-arr=list(map(int,input().split()))
+a=list(map(int,input().split()))
 k=int(input())
-sum=0
-for i in arr:
-    if(i==k):
-        break
-    sum=sum+i
-print(sum+k) 
+s=0
+for i in range(n):
+    if a[i]<=k:
+        s+=a[i]
+print(s)
