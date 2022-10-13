@@ -1,14 +1,11 @@
 a,b=map(int,input().split())
-arr1=list(map(int,input().split()))
-arr2=list(map(int,input().split()))
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
 c=0
-b=[]
-e=[]
-for i in arr1:
-    for j in arr2:
-        if(i==j):
-            b.append(i)
-for i in b:
-    if i not in e:
-        e.append(i)
-print(len(e))
+for i in list(set(l)):
+    if m.count(i)!=0:
+        c+=1
+for j in list(set(m)):
+    if l.count(j)!=0:
+        c+=1
+print(c//2)
