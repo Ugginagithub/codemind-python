@@ -1,9 +1,8 @@
 n=int(input())
-arr=list(map(int,input().split()))
-sum=0
-for i in arr:
-    if(i%2==0):
+a=list(map(int,input().split()))
+s=0
+for i in range(n):
+    if a[i]%2==0:
         break
-    if(i%2!=0):
-        sum=sum+i
-print(sum) 
+    s+=a[i]
+print(s)
