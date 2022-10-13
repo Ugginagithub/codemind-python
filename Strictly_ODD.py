@@ -1,13 +1,13 @@
 n=int(input())
-arr=list(map(int,input().split()))
+a=list(map(int,input().split()))
 c=0
-c1=0
-for i in range(0,n):
-    if(arr[i]%2!=0):
+d=0
+for i in range(n):
+    if i%2!=0 and a[i]%2!=0:
         c+=1
-        if(i%2!=0):
-            c1+=1
-if(c==c1):
+    if a[i]%2!=0:
+        d+=1
+if c==d:
     print('True')
 else:
     print('False')
