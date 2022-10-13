@@ -1,12 +1,16 @@
-n,m=map(int,input().split())
-arr=list(map(int,input().split()))
-c=0
-c1=0
-for i in arr:
-    if i<0:
-        if(len(str(i))-1==m):
-            c+=1
-    else:
-        if(len(str(i))==m):
-            c1+=1
-print(c+c1)
+def dig(n):
+    c=0
+    if n==0:
+        return 1
+    elif n<0:
+        n=n*-1
+    while n:
+        n=n//10
+        c+=1
+    return c
+x,y=map(int,input().split())
+l=list(map(int,input().split()))
+a=[]
+for i in range(x):
+    a.append(dig(l[i]))
+print(a.count(y))
