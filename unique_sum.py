@@ -1,10 +1,6 @@
 n=int(input())
-arr=list(map(int,input().split()))
-b=[]
+a=list(map(int,input().split()))
 s=0
-for i in arr:
-    if i not in b:
-        b.append(i)
-for i in b:
-    s=s+i
+for i in set(a):
+    s+=i
 print(s)
