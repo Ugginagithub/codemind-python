@@ -1,21 +1,15 @@
-def sd(n):
-    t=n
+a=int(input())
+b=int(input())
+for i in range(a,b+1):
+    temp=i
+    s=0
     c=0
-    c1=0
-    while(n):
-        r=n%10
-        c+=1
-        if(r==0):
-            break
-        if(t%r==0):
-            c1+=1
-        n=n//10
-    if(c==c1):
-        return 1
-    else:
-        return 0
-n=int(input())
-m=int(input())
-for i in range(n,m+1):
-    if(sd(i)):
+    while temp!=0:
+        j=temp%10
+        if j!=0:
+            if i%j==0:
+                c+=1
+        s+=1
+        temp=temp//10
+    if c==s:
         print(i,end=' ')
