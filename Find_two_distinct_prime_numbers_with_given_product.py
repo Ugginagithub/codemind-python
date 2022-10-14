@@ -1,17 +1,17 @@
-def pri(n):
-    if(n==1):
+def prime(n):
+    if n==1:
         return 0
     for i in range(2,int(n**0.5)+1):
-        if(n%i==0):
+        if n%i==0:
             return 0
-    else:
-        return 1
+    return 1
 n=int(input())
 c=0
-for i in range(1,n):
-    if(n%i==0):
-        if(pri(i)):
-            c+=1
-            print(i,end=' ')
-if(c==0):
+for i in range(n):
+    for j in range(n):
+        if i*j==n:
+            if prime(i) and prime(j):
+                print(i,end=' ')
+                c+=1
+if c==0:
     print('-1')
