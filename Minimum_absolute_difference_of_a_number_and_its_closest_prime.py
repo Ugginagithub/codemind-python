@@ -1,34 +1,24 @@
-def pri_left(x):
-    while x:
-        c=0
-        z=2
-        while z<=x//2:
-            if x%z==0:
-                c+=1
-            z+=1
-        if c==0:
-            return x
-        x-=1
-
-def pri_right(x):
-    while x:
-        c=0
-        z=2
-        while z<=x//2:
-            if x%z==0:
-                c+=1
-            z+=1
-        if c==0:
-            return x
-        x+=1
-
-
-n = int(input())
-left = n
-right = n
-l=pri_left(left)
-r=pri_right(right)
-if r-n<n-l:
-    print(r-n)
+def prime(n):
+    if n==1:
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+n=int(input())
+temp=n
+for i in range(n,1,-1):
+    if(prime(i)):
+        p=i
+        break
+while temp!=0:
+    if prime(temp):
+        q=temp
+        break
+    temp+=1
+if (n-p)<(q-n):
+    print(abs(n-p))
+elif (n-p)==(q-n):
+    print(abs(n-p))
 else:
-    print(n-l)
+    print(abs(n-q))
