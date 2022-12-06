@@ -1,4 +1,4 @@
-def fib(n):
+def fibo(n):
     a=0
     b=1
     c=a+b
@@ -12,11 +12,11 @@ def fib(n):
 n=int(input())
 temp=n
 for i in range(n,0,-1):
-    if(fib(i)):
+    if(fibo(i)):
         p=i
         break
 while temp!=0:
-    if fib(temp):
+    if(fibo(temp)):
         q=temp
         break
     temp+=1
